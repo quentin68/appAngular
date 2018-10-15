@@ -1,0 +1,13 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(51, 49, 49);
+  height:100vh;
+}
+:host>*{
+  flex: 1;
+}
+:host>:nth-child(2){
+  flex: 10;
+}

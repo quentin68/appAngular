@@ -1,0 +1,13 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  height:500px;
+}
+
+:host>:first-child{
+  flex: 10;
+}
+
+:host>*{
+  flex: 1;
+}

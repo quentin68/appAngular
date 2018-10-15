@@ -1,0 +1,24 @@
+:host{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width:100vw;
+  height:100vh;
+  background-image: url(/assets/bg.jpg)
+}
+
+:host>div{
+  margin:15px 15% ;
+}
+
+.panel {
+  background-color: grey;
+}
+
+.btn-danger {
+  background-color: crimson;
+}
+
+input.ng-dirty.ng-invalid.ng-touched{
+  background-color: crimson;
+}

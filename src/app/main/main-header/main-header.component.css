@@ -1,0 +1,18 @@
+
+:host{
+  display: flex;
+  height: 65px;
+  padding:10px;
+  background-color: crimson;
+  align-items: center;
+}
+
+:host>*{
+  flex:1;
+}
+:host>:nth-child(1){
+  flex:4;
+}
+:host>:nth-child(2){
+  flex:2;
+}

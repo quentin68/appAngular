@@ -1,0 +1,49 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+
+     <form #myForm="ngForm">
+       <legend>Welcome</legend>
+
+       <div class="form-group">
+         <label for="">Username</label>
+         <input type="text" class="form-control"
+          name="pseudo"
+          [(ngModel)]="user.login"
+
+          pattern="[a-z]{3,}"
+
+          required
+          placeholder="Login">
+       </div>
+
+       <div class="form-group">
+          <label for="">Password</label>
+
+          <input type="text" class="form-control"
+          name="password"
+          [(ngModel)]="user.password"
+
+          #pwd="ngModel"
+
+          pattern="[a-z]{3,}@orsys$"
+
+          required
+          placeholder="Password">
+        </div>
+
+        <div class="alert alert-danger" *ngIf="pwd.invalid && pwd.dirty  && pwd.touched">
+          <strong>Please!</strong> must be '@orsys'
+        </div>
+
+
+        <button type="button"
+        [disabled]="myForm.invalid"
+        (click)="connectUser()"
+        class="btn btn-danger btn-block">Enter</button>
+     </form>
+
+  </div>
+</div>
+

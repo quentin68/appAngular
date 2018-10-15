@@ -1,0 +1,28 @@
+<div>
+  <atos-icon-button [icon]="'plus'" color="crimson"></atos-icon-button>
+  <atos-text title white>
+    CHANNELS
+  </atos-text>
+  <ul>
+    <li *ngFor="let channel of channelsList; let id = index">
+      <a routerLink="/chat/{{id + 1}}">
+        <atos-text gray>{{channel.name}}</atos-text>
+      </a>
+    </li>
+  </ul>
+</div>
+<div>
+  <atos-text title white>TEAM</atos-text>
+  <ul>
+    <li  *ngFor="let user of usersList">
+      <atos-pseudo [user]="user"></atos-pseudo>
+    </li>
+  </ul>
+</div>
+<div>
+  <atos-icon-button [icon]="'plus'" color="crimson"></atos-icon-button>
+  <atos-text title white>
+    PRIVATE CHANNEL
+  </atos-text>
+
+</div>

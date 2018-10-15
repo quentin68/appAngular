@@ -1,0 +1,10 @@
+
+<atos-icon-button
+  icon="check"
+  [color]=" user.status ? 'green' : 'red' "
+  atosSize="medium">
+</atos-icon-button>
+
+<atos-text gray>{{user.pseudo}}</atos-text>
+
+<atos-avatar [image]="user.avatar" atosSize="medium"></atos-avatar>

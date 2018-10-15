@@ -1,0 +1,10 @@
+
+div{
+    height: 30px;
+    width: 30px;
+    padding:3px;
+    margin:3px;
+    border-radius: 18px;
+    line-height: 25px;
+    text-align: center;
+}

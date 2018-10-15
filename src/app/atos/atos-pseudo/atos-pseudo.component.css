@@ -1,0 +1,9 @@
+:host{
+    display: flex;
+    align-items: center;
+}
+
+:host>div{ 
+    display: flex;
+    flex-direction: column;
+}

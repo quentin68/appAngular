@@ -1,0 +1,7 @@
+:host{
+  font-size: .65em;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: inherit;
+}

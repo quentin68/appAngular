@@ -1,0 +1,9 @@
+:host{
+  display: flex;
+}
+:host>*{
+  flex: 1;
+}
+:host>:nth-child(2){
+  flex: 4;
+}

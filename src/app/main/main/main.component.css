@@ -1,0 +1,10 @@
+div{
+  display: flex;
+  padding: 20px;
+}
+div>*{
+  flex: 1;
+}
+div>:nth-child(1){
+  flex: 3;
+}
